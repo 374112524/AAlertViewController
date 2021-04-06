@@ -22,7 +22,7 @@ pod 'AAlertViewController'
 
 ## Author
 
-王纯志, wangchunzhi6@jd.com
+王纯志, wangchunzhi6@.com
 
 ## License
 

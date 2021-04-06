@@ -7,6 +7,7 @@
 //
 
 #import "AViewController.h"
+#import "AAlertViewController.h"
 
 @interface AViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self showAlertWithTitle:@"标题" message:@"内容" messageAttributes:@{NSForegroundColorAttributeName:UIColor.redColor} image:nil appearanceProcess:^(AAlertViewController * _Nonnull alertMaker) {
+        alertMaker.addDefaultTitle(@"确定", UIColor.blackColor);
+    } actionsBlock:^(NSInteger buttonIndex, UIAlertAction * _Nonnull action, AAlertViewController * _Nonnull alertSelf) {
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
